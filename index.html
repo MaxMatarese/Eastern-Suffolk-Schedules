@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <title>My Photo Gallery</title>
     <style>
-        body { text-align: center; font-family: sans-serif; background: #f4f4f9; padding: 20px; }
-        h1 { color: #333; margin-bottom: 30px; }
+        /* Creates the wooden frame border around the edge of the window */
+        html {
+            border: 20px solid #5c4033; /* Dark wood color */
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        /* Clean, non-distracting matte background color */
+        body { 
+            text-align: center; 
+            font-family: sans-serif; 
+            background: #e2d4c9; /* Matte warm-sand beige */
+            padding: 20px; 
+            margin: 0; 
+        }
+        
+        /* Spruced-up Title Styling */
+        h1 { 
+            font-family: "Georgia", "Times New Roman", serif; /* Elegant, premium serif font */
+            color: #3a261c; /* Deep wood-brown tone */
+            font-size: 2.8rem; /* Made it slightly larger and more authoritative */
+            font-weight: 700; 
+            letter-spacing: 1px; /* Subtle spacing between letters */
+            margin-top: 20px;
+            margin-bottom: 40px; 
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6); /* Soft light glow underneath to pop off the background */
+        }
         
         /* Layout Grid */
         .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 900px; margin: 0 auto; }
@@ -14,10 +39,11 @@
         img { 
             width: 350px; 
             height: auto; 
-            border-radius: 8px; 
+            border: 6px solid #5c4033; /* Wooden border */
             box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
             transition: transform 0.2s ease;
             cursor: zoom-in;
+            box-sizing: border-box; /* Keeps the total width exactly 350px including the border */
         }
         
         /* Subtle hover effect to show it is clickable */
